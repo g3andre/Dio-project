@@ -1,3 +1,3 @@
 # Repositório DIO
 
-Repositório contendo um todos os projetos criados no Bootcamp da DIO.
+Repositório contendo todos os projetos criados no Bootcamp da DIO.
