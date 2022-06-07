@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Css</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      list-style: none;
+    }
+
+    .flex-item {
+      padding: 20px;
+      margin: 5px;
+      background: blue;
+      color: aliceblue;
+      text-align: center;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .row-reverse li {
+      background: violet;
+    }
+
+    .column {
+      flex-direction: column;
+      float: left;
+    }
+
+    .column li {
+      background: cadetblue;
+    }
+
+    .column-reverse {
+      flex-direction: column-reverse;
+      float: right;
+    }
+
+    .column-reverse li {
+      background: red;
+    }
+
+  </style>
+</head>
+<body>
+  <ul class="flex-container row">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+  <ul class="flex-container row-reverse">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+  <ul class="flex-container column">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+  <ul class="flex-container column-reverse">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+</body>
+</html>
