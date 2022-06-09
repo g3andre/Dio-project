@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - FlexWrap</title>
+
+  <style>
+    body, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      margin-left: 5px;
+      text-transform: capitalize;
+      font-size: 16px;
+    }
+    .flex-container {
+      margin: 10px;
+      padding: 5px;
+      border: 2px solid brown;
+      display: flex;
+      width: 100px;
+    }
+    .flex-itens {
+      padding: 10px;
+      margin: 5px;
+      background: green;
+      color: white;
+    }
+
+    .no-wrap {
+      flex-wrap: nowrap;
+    }
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .justify-flexstart {
+      justify-content: flex-start;
+    }
+    .justify-flexend {
+      justify-content: flex-end;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+    .justify-spacearound {
+      justify-content: space-around;
+    }
+    .justify-spacebetween {
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <h1>Justify Content Flex Start</h1>
+  <ul class="flex-container wrap justify-flexstart">
+    <li class="flex-itens">1</li>
+    <li class="flex-itens">2</li>
+    <li class="flex-itens">3</li>
+    <li class="flex-itens">4</li>
+    <li class="flex-itens">5</li>
+  </ul>
+  <h1>Justify Content Flex End</h1>
+  <ul class="flex-container wrap justify-flexend">
+    <li class="flex-itens">1</li>
+    <li class="flex-itens">2</li>
+    <li class="flex-itens">3</li>
+    <li class="flex-itens">4</li>
+    <li class="flex-itens">5</li>
+  </ul>
+  <h1>Justify Content Center</h1>
+  <ul class="flex-container wrap justify-center">
+    <li class="flex-itens">1</li>
+    <li class="flex-itens">2</li>
+    <li class="flex-itens">3</li>
+    <li class="flex-itens">4</li>
+    <li class="flex-itens">5</li>
+  </ul>
+  <h1>Justify Content Space Around</h1>
+  <ul class="flex-container wrap justify-spacearound">
+    <li class="flex-itens">1</li>
+    <li class="flex-itens">2</li>
+    <li class="flex-itens">3</li>
+    <li class="flex-itens">4</li>
+    <li class="flex-itens">5</li>
+  </ul>
+  <h1>Justify Content Space Between</h1>
+  <ul class="flex-container wrap justify-spacebetween">
+    <li class="flex-itens">1</li>
+    <li class="flex-itens">2</li>
+    <li class="flex-itens">3</li>
+    <li class="flex-itens">4</li>
+    <li class="flex-itens">5</li>
+  </ul>
+</body>
+</html>
